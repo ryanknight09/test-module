@@ -1,0 +1,19 @@
+{
+  "presets": ["@babel/preset-react", "@babel/preset-typescript"],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-private-property-in-object",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "react-intl",
+      {
+        "idInterpolationPattern": "[sha512:contenthash:base64:6]",
+        "extractFromFormatMessageCall": true,
+        "ast": true
+      }
+    ]
+  ]
+}
