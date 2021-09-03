@@ -11,7 +11,9 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <p>Container Application</p>
-        <React.Suspense fallback={<div>Loading Header...</div>}>{/* <Header /> */}</React.Suspense>
+        <React.Suspense fallback={<div>Loading Header...</div>}>
+          <Header />
+        </React.Suspense>
       </header>
     </div>
   );
